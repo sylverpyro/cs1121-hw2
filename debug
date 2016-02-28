@@ -1,0 +1,33 @@
+varans:~/cs1121/hw2] msbenson% javac Scene.java > debug
+Scene.java:103: cannot resolve symbol
+symbol  : class ActionListener 
+location: class clicker.eventlisten
+        class eventlisten implements ActionListener {
+                                     ^
+Scene.java:109: cannot resolve symbol
+symbol  : class ActionEvent 
+location: class clicker.eventlisten
+                public void actionPerformed (ActionEvent event) {
+                                             ^
+Scene.java:37: cannot resolve symbol
+symbol  : variable eventlisten 
+location: class Tanker
+        public int xVel = eventlisten.xVelEvent;
+                          ^
+Scene.java:38: cannot resolve symbol
+symbol  : variable scenneW 
+location: class Tanker
+        public int cpTanker = (scenneW/2) - (tankerW/2) + (clock*xVel); 
+                               ^
+Scene.java:38: cannot resolve symbol
+symbol  : variable clock 
+location: class Tanker
+        public int cpTanker = (scenneW/2) - (tankerW/2) + (clock*xVel); 
+                                                           ^
+Scene.java:105: non-static variable clickX cannot be referenced from a static context
+                private int clickXEvent = clicker.clickX;
+                                                 ^
+Scene.java:107: non-static variable cpTanker cannot be referenced from a static context
+                private int cpTankerEvent = Tanker.cpTanker;
+                                                  ^
+7 errors
